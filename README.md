@@ -9,6 +9,8 @@ Features
 Visual Feedback: Displays password strength through a series of color-coded bars.
 Dynamic Messages: Offers suggestions for improving password strength based on the current input.
 Responsive Design: Built with Bootstrap for a responsive, mobile-friendly layout.
+
+
 How It Works
 
 
