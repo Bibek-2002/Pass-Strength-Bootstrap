@@ -10,12 +10,24 @@ document.getElementById('password').addEventListener('input', function() {
     submitButton.disabled = strength < 3;
 });
 
+document.getElementById('togglePassword').addEventListener('click', function() {
+    const passwordInput = document.getElementById('password');
+    const toggleIcon = document.getElementById('eyeIcon');
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        toggleIcon.src = 'open-eye.png'; 
+    } else {
+        passwordInput.type = 'password';
+        toggleIcon.src = 'close-eye.png'; 
+    }
+});
+
 function getStrength(password) {
     let strength = 0;
     if (password.length > 5) strength += 1;
     if (password.length > 8) strength += 1;
     if (/[\d]/.test(password) && /[a-zA-Z]/.test(password)) strength += 1;
-    if (/[^a-zA-Z\d]/.test(password)) strength += 1; 
+    if (/[^a-zA-Z\d]/.test(password)) strength += 1;
     return strength;
 }
 
