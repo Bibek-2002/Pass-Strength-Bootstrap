@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Indicator with Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="password" style="color: blue;">Create a password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password Must Contains at least 6 letters">
+                </div>
+                <div id="password-strength-text" class="mt-2"></div>
+                <div id="strength-bar" class="d-flex justify-content-start">
+                    <div class="strength-indicator"></div>
+                    <div class="strength-indicator"></div>
+                    <div class="strength-indicator"></div>
+                </div>
+                <button id="submit-btn" class="btn btn-primary mt-3" disabled>Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
