@@ -1,11 +1,11 @@
-Password Strength Indicator with Bootstrap
+#Password Strength Indicator with Bootstrap
 This project provides a web-based password strength indicator that uses HTML, CSS, and JavaScript to visually communicate the strength of a password as it is entered. Leveraging Bootstrap for styling, the tool offers real-time feedback through color-coded indicators and messages to guide users in creating more secure passwords.
 
-Features
+#Features
 Visual Feedback: Displays password strength through a series of color-coded bars.
 Dynamic Messages: Offers suggestions for improving password strength based on the current input.
 Responsive Design: Built with Bootstrap for a responsive, mobile-friendly layout.
-How It Works
+#How It Works
 HTML
 The HTML document sets up a simple form with an input field for the password, a display area for the password strength text, and a bar consisting of three separate div elements that represent the strength indicators.
 
