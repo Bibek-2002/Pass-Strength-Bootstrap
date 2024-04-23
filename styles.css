@@ -32,3 +32,15 @@
 .bg-red {
     background-color: #dc3545; 
 }
+
+.input-group .input-group-append .btn {
+    border: 0; 
+    background: transparent;  
+    outline: none; 
+    box-shadow: none;  
+}
+
+.input-group .input-group-append .btn img {
+    height: 20px;  
+    width: auto;
+}
