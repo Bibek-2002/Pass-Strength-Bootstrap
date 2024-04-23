@@ -13,18 +13,27 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="password" style="color: blue;">Create a password:</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password Must Contains at least 6 letters">
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password Must Contains at least 6 letters">
+                        <div class="input-group-append">
+                            <button id="togglePassword" class="btn btn-outline-secondary" type="button">
+                                <img id="eyeIcon" src="close-eye.png" alt="Toggle Visibility">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div id="password-strength-text" class="mt-2"></div>
+                    <div id="strength-bar" class="d-flex justify-content-start">
+                        <div class="strength-indicator"></div>
+                        <div class="strength-indicator"></div>
+                        <div class="strength-indicator"></div>
+                    </div>
+                    <button id="submit-btn" class="btn btn-primary mt-3" disabled>Submit</button>
                 </div>
-                <div id="password-strength-text" class="mt-2"></div>
-                <div id="strength-bar" class="d-flex justify-content-start">
-                    <div class="strength-indicator"></div>
-                    <div class="strength-indicator"></div>
-                    <div class="strength-indicator"></div>
-                </div>
-                <button id="submit-btn" class="btn btn-primary mt-3" disabled>Submit</button>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
